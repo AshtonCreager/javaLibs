@@ -23,9 +23,13 @@ public class JavaLibs {
         String firstName;
         String age;
         String animal;
-        String candy;
-        String pop;
-        String feeling;
+        String noun1;
+        String verb1;
+        String adjective1;
+        String noun2;
+        String verb2;
+        String adjective2;
+        String otherName;
         
         int number1 = 0;
         int number2 = 0;
@@ -66,21 +70,34 @@ public class JavaLibs {
         System.out.println("Name one animal");
         animal = sc.nextLine();
         
-        System.out.println(firstName + " you have " + total +" "+ animal + " and they"
-                + " have been in your house for " + total2 + " hours!");
+        System.out.println("Give a noun");
+        noun1 = sc.nextLine();
         
-        System.out.println("what is your favorite candy?");
-        candy = sc.nextLine();
+        System.out.println("Give a verb with 'ing' at the end");
+        verb1 = sc.nextLine();
         
-        System.out.println("what is you favorite pop?");
-        pop = sc.nextLine();
+        System.out.println("Give another name");
+        otherName = sc.nextLine();
         
-        System.out.println("well "+ firstName + " the " + animal + " probably ate all "
-                + "of your " + candy + " and probably spilled all of your " + pop);
+        System.out.println("Give an adjective");
+        adjective1 = sc.nextLine();
         
-        System.out.println("How does this make you feel");
-        feeling = sc.nextLine();
+        System.out.println("Give another noun");
+        noun2 = sc.nextLine();
         
-    }
-    
+        System.out.println("Give another verb with 'ing' at the end");
+        verb2 = sc.nextLine();
+        
+        System.out.println("Give another adjective");
+        adjective2 = sc.nextLine();
+        
+        System.out.println(animal +" "+ firstName + " walks into a bar and sees " + otherName +"" 
+                + " with their " + animal + " sitting next to him holding a " + noun1 + ""
+                + "\n in its hands while " + verb1 +". " + firstName + " starts "+ verb2 + ""
+                + " out of confusion and starts seeing " + adjective1 + "the the"
+                + "\n "+ animal + " ran out of the bar and then turned" + adjective2 + "then"
+                + " "+ otherName + "followed it out the door.\n " + firstName + "was confused "
+                + "and passed out.");
+    }   
+        
 }
